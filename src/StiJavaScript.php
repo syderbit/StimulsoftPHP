@@ -45,7 +45,7 @@ class StiJavaScript
         $result = '';
         foreach ($scripts as $name) {
             $product = strpos($name, 'dashboards') > 0 ? 'dashboards-php' : 'stimulsoftphp';
-            $result .= "<script src=\"/syderbit/$product/public/scripts/$name\" type=\"text/javascript\"></script>\n";
+            $result .= "<script src=\"/vendor/syderbit/$product/public/scripts/$name\" type=\"text/javascript\"></script>\n";
         }
 
         return $result;
